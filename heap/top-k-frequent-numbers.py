@@ -3,9 +3,7 @@ import heapq
 def topKFrequentNumbers(arr, k):
     dict = {}
     result = []
-
-    print(dict.get('name') or 0 + 1)
-
+    
     for _, num in enumerate(arr):
         value = dict[num] + 1 if num in dict else 1
         dict[num] = value
